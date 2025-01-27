@@ -29,6 +29,8 @@ The `LIKE` operator is used to search for a specified pattern in a column.
 #### **Wildcards for `LIKE`:**
 - `%`: Matches zero or more characters.
 - `_`: Matches exactly one character.
+
+#### **In MS SQL Server you Can Use**
 - `[ ]`: Matches any single character within the specified set (e.g., `[abc]` matches `a`, `b`, or `c`).
 - `[! ]` or `[^ ]`: Matches any single character not within the specified set (e.g., `[!abc]` matches any character except `a`, `b`, or `c`).
 
@@ -205,7 +207,7 @@ WHERE order_date BETWEEN '2024-01-01' AND '2024-12-31';
    FROM employees
    WHERE name LIKE '50\%' ESCAPE '\'; -- Matches '50%'
    ```
-
+#### **Only Use in MS SQL Server**
 2. **Combining Wildcards:**
    ```sql
    SELECT name
